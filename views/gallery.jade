@@ -1,0 +1,17 @@
+extends layout
+
+//    = JSON.stringify(gallery)
+block content
+    header
+      h1 Galleries
+    table.table.table-striped
+      thead
+        tr
+          th Name 
+          th id
+      tbody
+        each galler in gallery
+          tr
+            td= galler.name 
+            td= galler.id
+              
